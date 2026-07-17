@@ -1,0 +1,179 @@
+.section {
+  padding: 100px 0;
+  background: var(--bg-secondary);
+  border-bottom: 1px solid rgba(163, 173, 159, 0.06);
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 64px;
+}
+
+.title {
+  font-size: clamp(1.8rem, 4vw, 2.5rem);
+  font-weight: 700;
+  margin-bottom: 14px;
+}
+
+.tagline {
+  font-size: 15px;
+  color: var(--text-secondary);
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: 1fr 1.8fr;
+  gap: 48px;
+  align-items: start;
+}
+
+.zoneList {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.zoneBtn {
+  background: transparent;
+  border: 1px solid rgba(163, 173, 159, 0.08);
+  padding: 20px 24px;
+  border-radius: 6px;
+  text-align: left;
+  cursor: pointer;
+  color: var(--text-secondary);
+  position: relative;
+  transition: var(--transition-fast);
+  overflow: hidden;
+}
+
+.zoneBtn:hover {
+  border-color: rgba(212, 175, 55, 0.2);
+  color: var(--text-primary);
+}
+
+.zoneBtnActive {
+  border-color: rgba(212, 175, 55, 0.35);
+  background: rgba(20, 27, 18, 0.4);
+  color: #ffffff;
+}
+
+.activeIndicator {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  background: var(--accent-gold);
+}
+
+.zoneName {
+  font-size: 16px;
+  font-weight: 700;
+  font-family: var(--font-title), serif;
+  letter-spacing: 0.02em;
+}
+
+.zoneStates {
+  font-size: 11px;
+  color: var(--text-muted);
+  margin-top: 6px;
+  line-height: 1.4;
+}
+
+.detailsCard {
+  background: var(--bg-tertiary);
+  border: 1px solid rgba(212, 175, 55, 0.12);
+  border-radius: 6px;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  box-shadow: var(--shadow-md);
+  min-height: 400px;
+  position: relative;
+}
+
+.detailTitle {
+  font-size: 26px;
+  font-weight: 700;
+  font-family: var(--font-title), serif;
+  color: var(--accent-gold);
+  letter-spacing: 0.02em;
+}
+
+.detailDesc {
+  font-size: 14px;
+  line-height: 1.7;
+  color: var(--text-secondary);
+}
+
+.metrics {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  border-top: 1px solid rgba(163, 173, 159, 0.08);
+  border-bottom: 1px solid rgba(163, 173, 159, 0.08);
+  padding: 20px 0;
+}
+
+.metricItem {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.metricLabel {
+  font-size: 9px;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  letter-spacing: 0.08em;
+}
+
+.metricValue {
+  font-size: 13px;
+  color: var(--text-primary);
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.cropsSection {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.cropsLabel {
+  font-size: 11px;
+  text-transform: uppercase;
+  color: var(--accent-gold);
+  letter-spacing: 0.1em;
+  font-weight: 700;
+}
+
+.cropsList {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.cropTag {
+  background: rgba(90, 133, 80, 0.08);
+  border: 1px solid rgba(90, 133, 80, 0.25);
+  color: var(--text-primary);
+  font-size: 11px;
+  font-weight: 600;
+  padding: 5px 12px;
+  border-radius: 4px;
+  letter-spacing: 0.02em;
+  font-family: var(--font-body), sans-serif;
+}
+
+@media (max-width: 992px) {
+  .layout {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+}

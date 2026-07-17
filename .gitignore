@@ -1,0 +1,14 @@
+node_modules
+.next
+.env
+.env.local
+dist
+.DS_Store
+out
+config.ts
+*.mp4
+/test-results/
+/playwright-report/
+/blob-report/
+/playwright/.cache/
+.vscode
