@@ -16,8 +16,8 @@ const outfit = Outfit({
 
 export const metadata: Metadata = {
   title: "BABA DEEP SINGH KHAD STORE",
-  description: "Discover detailed crop information, native names, regional distribution, scientific classification, soil requirements, and live simulated Mandi prices across India.",
-  keywords: "Indian Agriculture, Crops, Mandi Prices, Kharif, Rabi, Zaid, Wheat, Rice, Spices, Cardamom, Indian Spices, Smart Farming",
+  description: "Affordable Prices. Trusted Quality. Everything Farmers Need.",
+  keywords: "Punjab Agriculture, Indian Agriculture, Crops, Punjab Store,  Kharif, Rabi, Zaid, Wheat, Rice, Spices, Cardamom, Indian Spices, Smart Farming",
 };
 
 export default function RootLayout({
