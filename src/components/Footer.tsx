@@ -89,7 +89,7 @@ export default function Footer() {
       </div> */}
 
       <div className={`${styles.bottom} container`}>
-        <p>&copy; {new Date().getFullYear()} Proprietor, Baba Deep Singh Khad Store, Gumtala.</p>
+        <p> Baba Deep Singh Khad Store, Gumtala.</p>
         {/* <div className={styles.bottomLinks}>
           <a href="#">Privacy Policy</a>
           <a href="#">Terms of Service</a>

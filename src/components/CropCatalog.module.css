@@ -147,8 +147,8 @@
   position: absolute;
   top: 16px;
   right: 16px;
-  background: rgba(11, 15, 10, 0.82);
-  border: 1px solid rgba(212, 175, 55, 0.25);
+  background: rgba(248, 244, 234, 0.9);
+  border: 1px solid rgba(199, 159, 42, 0.25);
   padding: 4px 12px;
   border-radius: 4px;
   font-size: 10px;
@@ -173,7 +173,7 @@
   font-size: 20px;
   font-weight: 700;
   font-family: var(--font-title), serif;
-  color: #ffffff;
+  color: var(--text-primary);
 }
 
 .scientific {
@@ -247,7 +247,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(8, 11, 7, 0.85);
+  background: rgba(248, 244, 234, 0.95);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   z-index: 2000;
@@ -258,9 +258,9 @@
 }
 
 .modalContent {
-  background: var(--bg-secondary);
-  border: 1px solid rgba(212, 175, 55, 0.2);
-  border-radius: 6px;
+  background: #ffffff;
+  border: 1px solid rgba(199, 159, 42, 0.2);
+  border-radius: 16px;
   width: 100%;
   max-width: 780px;
   max-height: 85vh;
@@ -273,7 +273,7 @@
   position: absolute;
   top: 20px;
   right: 20px;
-  background: rgba(11, 15, 10, 0.7);
+  background: rgba(255, 255, 255, 0.85);
   border: 1px solid rgba(163, 173, 159, 0.15);
   color: var(--text-primary);
   width: 36px;
@@ -290,7 +290,7 @@
 .modalClose:hover {
   border-color: var(--accent-gold);
   color: var(--accent-gold);
-  background: var(--bg-primary);
+  background: var(--bg-secondary);
 }
 
 .modalHero {
@@ -311,7 +311,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(to bottom, rgba(11, 15, 10, 0.2) 0%, rgba(20, 27, 18, 1) 100%);
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.2) 0%, rgba(0, 0, 0, 0.18) 100%);
 }
 
 .modalHeroContent {
@@ -326,7 +326,7 @@
   font-size: clamp(22px, 4vw, 32px);
   font-family: var(--font-title), serif;
   font-weight: 800;
-  color: #ffffff;
+  color: var(--text-primary);
 }
 
 .modalScientific {
@@ -405,7 +405,7 @@
 .sectionSubtitle {
   font-size: 16px;
   font-family: var(--font-title), serif;
-  color: #ffffff;
+  color: var(--text-primary);
   margin-bottom: 14px;
   border-left: 2px solid var(--accent-gold);
   padding-left: 8px;

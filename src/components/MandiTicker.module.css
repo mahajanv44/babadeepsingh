@@ -126,7 +126,7 @@
 }
 
 .tickerItemPrice {
-  color: #ffffff;
+  color: var(--text-primary);
 }
 
 .grid {
@@ -136,9 +136,9 @@
 }
 
 .priceCard {
-  background: var(--bg-tertiary);
-  border: 1px solid rgba(163, 173, 159, 0.06);
-  border-radius: 6px;
+  background: #ffffff;
+  border: 1px solid rgba(75, 111, 66, 0.08);
+  border-radius: 12px;
   padding: 24px;
   display: flex;
   flex-direction: column;
@@ -148,7 +148,7 @@
 }
 
 .priceCard:hover {
-  border-color: rgba(212, 175, 55, 0.3);
+  border-color: rgba(199, 159, 42, 0.3);
   transform: translateY(-3px);
   box-shadow: var(--shadow-md);
 }
@@ -185,7 +185,7 @@
 .priceValue {
   font-size: 26px;
   font-weight: 700;
-  color: #ffffff;
+  color: var(--text-primary);
   font-family: var(--font-body), sans-serif;
 }
 

@@ -50,7 +50,7 @@ export default function Hero({ onExploreClick, onMandiClick }: HeroProps) {
           transition={{ duration: 0.8, delay: 0.2 }}
           className={styles.badge}
         >
-        Innovative Agricultural Solutions
+       ਮਿੱਟੀ-ਜੁੜੀ ਵਿਰਾਸਤ। ਆਧੁਨਿਕ ਸੂਝ-ਬੂਝ।
         </motion.div>
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -74,19 +74,19 @@ export default function Hero({ onExploreClick, onMandiClick }: HeroProps) {
           className={styles.title}
         >
         {/* BABA DEEP SINGH KHAD STORE */}
-          <span className={styles.titleHighlight}>Earthen Legacy. Modern Intelligence.</span>
+          <span className={styles.titleHighlight}>🌱 Affordable Prices. Trusted Quality. Everything Farmers Need. 🌾</span>
         </motion.h1>
 
         {/* Animated Subtitle */}
-        <motion.p
+        {/* <motion.p
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.9, delay: 0.6 }}
           className={styles.subtitle}
         >
-          Explore India's crops, soil insights, weather trends, cultivation cycles, and discover the best seeds, fertilizers, pesticides, and farming equipment for every season.
-          {/* Explore a rich treasury of India&apos;s crops. Dive deep into soil metrics, regional distribution, historical cultivation cycles. */}
-        </motion.p>
+           Explore India's crops, soil insights, weather trends, cultivation cycles, and discover the best seeds, fertilizers, pesticides, and farming equipment for every season. 
+           Explore a rich treasury of India&apos;s crops. Dive deep into soil metrics, regional distribution, historical cultivation cycles. 
+        </motion.p> */}
 
         {/* Interactive Buttons */}
         <motion.div

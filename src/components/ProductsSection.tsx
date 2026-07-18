@@ -8,7 +8,7 @@ const productCategories = [
     title: "Seeds",
     icon: Sprout,
     accent: "seed",
-    description: "Reliable seed varieties that help farmers achieve better germination, stronger growth, and healthier harvests.",
+    description: "ਬੀਜਾਂ ਦੀਆਂ ਭਰੋਸੇਯੋਗ ਕਿਸਮਾਂ ਜੋ ਕਿਸਾਨਾਂ ਨੂੰ ਬਿਹਤਰ ਉਗਣ-ਸ਼ਕਤੀ, ਮਜ਼ਬੂਤ ਵਾਧਾ ਅਤੇ ਸਿਹਤਮੰਦ ਫਸਲ ਪ੍ਰਾਪਤ ਕਰਨ ਵਿੱਚ ਮਦਦ ਕਰਦੀਆਂ ਹਨ।",
     items: ["Pusa Basmati 1121", "Hybrid Maize", "Groundnut GN 4"],
     image: "/images/products/seeds.svg",
   },
@@ -16,7 +16,7 @@ const productCategories = [
     title: "Fertilizers",
     icon: FlaskConical,
     accent: "fertilizer",
-    description: "Nutrient-rich fertilizer solutions that support robust plants and balanced soil health across Indian farms.",
+    description: "ਪੌਸ਼ਟਿਕ ਤੱਤਾਂ ਨਾਲ ਭਰਪੂਰ ਖਾਦ ਦੇ ਘੋਲ, ਜੋ ਭਾਰਤੀ ਖੇਤਾਂ ਵਿੱਚ ਮਜ਼ਬੂਤ ​​ਪੌਦਿਆਂ ਅਤੇ ਮਿੱਟੀ ਦੀ ਸੰਤੁਲਿਤ ਸਿਹਤ ਨੂੰ ਬਰਕਰਾਰ ਰੱਖਣ ਵਿੱਚ ਮਦਦ ਕਰਦੇ ਹਨ।",
     items: ["IFFCO 19:19:19", "NPK 12:32:16", "Organic Compost Mix"],
     image: "/images/products/fertilizers.svg",
   },
@@ -24,7 +24,7 @@ const productCategories = [
     title: "Pesticides",
     icon: ShieldCheck,
     accent: "pesticide",
-    description: "Effective crop protection products that defend fields against pests, disease, and seasonal challenges.",
+    description: "ਫਸਲ ਸੁਰੱਖਿਆ ਦੇ ਪ੍ਰਭਾਵਸ਼ਾਲੀ ਉਤਪਾਦ ਜੋ ਖੇਤਾਂ ਨੂੰ ਕੀੜਿਆਂ, ਬਿਮਾਰੀਆਂ ਅਤੇ ਮੌਸਮੀ ਚੁਣੌਤੀਆਂ ਤੋਂ ਬਚਾਉਂਦੇ ਹਨ।",
     items: ["Neem-Based Spray", "Bacterial Bio-Pesticide", "Insect Control Granules"],
     image: "/images/products/pesticides.svg",
   },
@@ -32,7 +32,7 @@ const productCategories = [
     title: "Farming Equipment",
     icon: Tractor,
     accent: "equipment",
-    description: "Durable farming tools and equipment that make everyday field work easier, faster, and more efficient.",
+    description: "ਖੇਤੀਬਾੜੀ ਦੇ ਮਜ਼ਬੂਤ ​​ਸੰਦ ਅਤੇ ਉਪਕਰਣ ਜੋ ਖੇਤਾਂ ਦੇ ਰੋਜ਼ਾਨਾ ਦੇ ਕੰਮਾਂ ਨੂੰ ਆਸਾਨ, ਤੇਜ਼ ਅਤੇ ਵਧੇਰੇ ਕੁਸ਼ਲ ਬਣਾਉਂਦੇ ਹਨ।",
     items: ["KisaanKraft Tiller", "Manual Seed Drill", "Watering Can Set"],
     image: "/images/products/equipment.svg",
   },
@@ -46,10 +46,11 @@ export default function ProductsSection() {
       <div className="container">
         <div className={styles.header}>
           <p className={styles.eyebrow}>Trusted Farm Inputs</p>
-          <h2 className={styles.title}>Premium agricultural products for stronger farms and better yields</h2>
-          <p className={styles.subtitle}>
+          <h2 className={styles.title}>
+ਮਜ਼ਬੂਤ ​​ਫਾਰਮਾਂ ਅਤੇ ਬਿਹਤਰ ਪੈਦਾਵਾਰ ਲਈ ਪ੍ਰੀਮੀਅਮ ਖੇਤੀਬਾੜੀ ਉਤਪਾਦ</h2>
+          {/* <p className={styles.subtitle}>
             Explore dependable seeds, fertilizers, pesticides, and farming equipment from trusted Indian brands designed to help farmers grow with confidence.
-          </p>
+          </p> */}
         </div>
 
         <div className={styles.grid}>

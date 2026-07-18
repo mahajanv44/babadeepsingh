@@ -55,9 +55,9 @@
 }
 
 .zoneBtnActive {
-  border-color: rgba(212, 175, 55, 0.35);
-  background: rgba(20, 27, 18, 0.4);
-  color: #ffffff;
+  border-color: rgba(199, 159, 42, 0.35);
+  background: #ffeaad1f;
+  color: var(--text-primary);
 }
 
 .activeIndicator {
@@ -84,9 +84,9 @@
 }
 
 .detailsCard {
-  background: var(--bg-tertiary);
-  border: 1px solid rgba(212, 175, 55, 0.12);
-  border-radius: 6px;
+  background: #ffffff;
+  border: 1px solid rgba(75, 111, 66, 0.12);
+  border-radius: 12px;
   padding: 40px;
   display: flex;
   flex-direction: column;

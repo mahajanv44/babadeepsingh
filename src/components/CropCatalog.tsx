@@ -37,7 +37,7 @@ export default function CropCatalog() {
         >
           <h2 className={styles.title}>Agricultural Crop Treasury</h2>
           <p className={styles.tagline}>
-            Explore taxonomic details, historical cultivation needs, regional sources, and nutritional metrics of India&apos;s primary crops.
+ਭਾਰਤ ਦੀਆਂ ਮੁੱਖ ਫਸਲਾਂ ਦੇ ਵਰਗੀਕਰਨ ਸੰਬੰਧੀ ਵੇਰਵਿਆਂ, ਇਤਿਹਾਸਕ ਕਾਸ਼ਤ ਲੋੜਾਂ, ਖੇਤਰੀ ਸਰੋਤਾਂ ਅਤੇ ਪੌਸ਼ਟਿਕ ਮਾਪਦੰਡਾਂ ਬਾਰੇ ਜਾਣਕਾਰੀ ਪ੍ਰਾਪਤ ਕਰੋ।
           </p>
         </motion.div>
 

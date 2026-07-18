@@ -84,7 +84,7 @@ export default function AgriZones() {
         >
           <h2 className={styles.title}>India&apos;s Agro-Climatic Zones</h2>
           <p className={styles.tagline}>
-            Explore how India&apos;s varied soil chemistry, regional climates, and rainfall patterns define local farming practices and crop choices.
+    ਜਾਣੋ ਕਿ ਕਿਵੇਂ ਭਾਰਤ ਦੀ ਮਿੱਟੀ ਦੀ ਵਿਭਿੰਨ ਰਸਾਇਣਕ ਬਣਤਰ, ਖੇਤਰੀ ਜਲਵਾਯੂ ਅਤੇ ਵਰਖਾ ਦੇ ਪੈਟਰਨ ਸਥਾਨਕ ਖੇਤੀਬਾੜੀ ਦੇ ਤਰੀਕਿਆਂ ਅਤੇ ਫਸਲਾਂ ਦੀ ਚੋਣ ਨੂੰ ਨਿਰਧਾਰਤ ਕਰਦੇ ਹਨ।
           </p>
         </motion.div>
 

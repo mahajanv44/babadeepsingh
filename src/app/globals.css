@@ -1,25 +1,25 @@
 :root {
-  --bg-primary: #0b0f0a; /* Deep forest olive-black */
-  --bg-secondary: #141b12; /* Rich warm dark olive */
-  --bg-tertiary: #1d271a; /* Lighter olive wood */
-  --accent-gold: #d4af37; /* Metallic gold */
-  --accent-gold-rgb: 212, 175, 55;
-  --accent-gold-hover: #f3cf58;
-  --accent-green: #5a8550; /* Leaf sage green */
-  --accent-green-rgb: 90, 133, 80;
-  --text-primary: #f2f4f0; /* Crisp warm white */
-  --text-secondary: #a3ad9f; /* Sage silver text */
-  --text-muted: #6f786c; /* Deep sage gray */
-  --border-color: rgba(163, 173, 159, 0.12);
-  
-  --glass-bg: rgba(20, 27, 18, 0.7);
-  --glass-border: rgba(212, 175, 55, 0.15);
-  --glass-border-green: rgba(90, 133, 80, 0.2);
-  
-  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.2);
-  --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.3);
-  --shadow-lg: 0 16px 40px rgba(0, 0, 0, 0.4);
-  
+  --bg-primary: #f8f4ec; /* Light cream */
+  --bg-secondary: #f1ead4; /* Soft parchment */
+  --bg-tertiary: #e7dec8; /* Warm beige */
+  --accent-gold: #c79f2a; /* Gold accent */
+  --accent-gold-rgb: 199, 159, 42;
+  --accent-gold-hover: #e0bf60;
+  --accent-green: #4b6f42; /* Leafy green */
+  --accent-green-rgb: 75, 111, 66;
+  --text-primary: #1d2a19; /* Dark olive text */
+  --text-secondary: #56664b; /* Muted forest text */
+  --text-muted: #7d836d; /* Soft muted text */
+  --border-color: rgba(75, 111, 66, 0.12);
+
+  --glass-bg: rgba(248, 244, 234, 0.78);
+  --glass-border: rgba(199, 159, 42, 0.18);
+  --glass-border-green: rgba(75, 111, 66, 0.18);
+
+  --shadow-sm: 0 2px 12px rgba(30, 30, 30, 0.08);
+  --shadow-md: 0 8px 24px rgba(30, 30, 30, 0.12);
+  --shadow-lg: 0 16px 40px rgba(30, 30, 30, 0.14);
+
   --transition-smooth: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
   --transition-fast: all 0.2s ease;
 }
@@ -29,7 +29,7 @@
   padding: 0;
   margin: 0;
   scrollbar-width: thin;
-  scrollbar-color: var(--accent-gold) var(--bg-primary);
+  scrollbar-color: var(--accent-gold) var(--bg-secondary);
 }
 
 html {
@@ -77,7 +77,7 @@ body {
 }
 
 .glass-green {
-  background: rgba(11, 15, 10, 0.8);
+  background: rgba(255, 255, 255, 0.82);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
   border: 1px solid var(--glass-border-green);

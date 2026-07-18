@@ -110,7 +110,7 @@ export default function ContactUs({ onClose }: ContactUsProps) {
             {/* Contact Information */}
             <motion.div variants={itemVariants} className={styles.infoSection}>
               <h3 className={styles.sectionTitle}>Business Information</h3>
-<h4>Prop. Sewak Singh</h4>
+
 <br />
               <div className={styles.infoItem}>
                 <h4>Address</h4>

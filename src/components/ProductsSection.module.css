@@ -1,7 +1,7 @@
 .section {
-  padding: 96px 0;
-  background: #141b12;
-  border-bottom: 1px solid rgba(163, 173, 159, 0.08);
+  padding: 72px 0;
+  background: #fff;
+  border-bottom: 1px solid rgba(75, 111, 66, 0.08);
 }
 
 .header {
@@ -9,8 +9,8 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
-  gap: 14px;
-  margin-bottom: 42px;
+  gap: 12px;
+  margin-bottom: 32px;
 }
 
 .eyebrow {
@@ -22,9 +22,10 @@
 }
 
 .title {
-  font-size: clamp(1.8rem, 3.1vw, 2.25rem);
+  font-size: clamp(1.8rem, 3.1vw, 1.80rem);
   line-height: 1.2;
   max-width: 760px;
+  color: var(--text-primary);
 }
 
 .subtitle {
@@ -41,8 +42,8 @@
 }
 
 .card {
-  background: rgba(20, 27, 18, 0.86);
-  border: 1px solid rgba(163, 173, 159, 0.12);
+  background: #ffffff;
+  border: 1px solid rgba(75, 111, 66, 0.12);
   border-radius: 16px;
   padding: 24px;
   display: flex;
@@ -55,7 +56,7 @@
 
 .card:hover {
   transform: translateY(-4px);
-  border-color: rgba(212, 175, 55, 0.28);
+  border-color: rgba(199, 159, 42, 0.28);
   box-shadow: var(--shadow-md);
 }
 
@@ -73,7 +74,7 @@
 }
 
 .fertilizer {
-  background: linear-gradient(135deg, #f5e3aa, #d4af37);
+  background: linear-gradient(135deg, #f5e3aa, #c79f2a);
 }
 
 .pesticide {
@@ -140,7 +141,7 @@
 .previewOverlay {
   position: fixed;
   inset: 0;
-  background: rgba(4, 8, 5, 0.82);
+  background: rgba(248, 244, 234, 0.95);
   display: grid;
   place-items: center;
   z-index: 1000;
@@ -152,9 +153,9 @@
   width: min(860px, 100%);
   border-radius: 24px;
   overflow: hidden;
-  border: 1px solid rgba(212, 175, 55, 0.24);
+  border: 1px solid rgba(199, 159, 42, 0.24);
   box-shadow: var(--shadow-lg);
-  background: #10170d;
+  background: #ffffff;
 }
 
 .previewImage {
@@ -173,7 +174,7 @@
   height: 38px;
   display: grid;
   place-items: center;
-  background: rgba(11, 15, 10, 0.8);
+  background: rgba(255, 255, 255, 0.9);
   color: var(--text-primary);
   cursor: pointer;
   z-index: 2;
