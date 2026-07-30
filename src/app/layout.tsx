@@ -24,8 +24,11 @@ export const metadata: Metadata = {
   robots: {
     index: true,
     follow: true,
+  },
+  verification: {
+    google: "JpnhcCO5wR1AjqSZ3MjZUNtgmGbvmk6t5hL1iEfXB4c",
   }
-};
+}
 
 export default function RootLayout({
   children,
