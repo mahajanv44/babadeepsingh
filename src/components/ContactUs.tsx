@@ -83,7 +83,7 @@ export default function ContactUs({ onClose }: ContactUsProps) {
           {/* Map Section */}
           <motion.div variants={itemVariants} className={styles.mapWrapper}>
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d27163.334374826296!2d74.82801188759!3d31.677171867443057!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3919648b7f16aa6f%3A0x4c86bb7f68e9901b!2sGumtala%2C%20Amritsar%2C%20Punjab!5e0!3m2!1sen!2sin!4v1784097464097!5m2!1sen!2sin"
+              src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3395.5894511762513!2d74.83704567561767!3d31.672450074144653!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzHCsDQwJzIwLjgiTiA3NMKwNTAnMjIuNiJF!5e0!3m2!1sen!2sin!4v1785418214842!5m2!1sen!2sin"
               width="100%"
               height="400"
               style={{ border: 0, borderRadius: "12px" }}
