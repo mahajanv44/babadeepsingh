@@ -51,7 +51,7 @@ export default function Navbar({ activeSection, onNavClick }: NavbarProps) {
       src="/images/title-logo.webp"
       width={120}
       height={63}
-      alt="logo"
+      alt="Baba Deep Singh Khad Store Logo"
     />
         {/* <Sprout className={styles.logoIcon} />
         <span>AGRIVEDA</span> */}

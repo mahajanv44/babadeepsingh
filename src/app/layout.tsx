@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Cinzel, Outfit } from "next/font/google";
 import "./globals.css";
-
+import Head from 'next/head';
 const cinzel = Cinzel({
   variable: "--font-title",
   subsets: ["latin"],
@@ -15,9 +15,16 @@ const outfit = Outfit({
 });
 
 export const metadata: Metadata = {
-  title: "BABA DEEP SINGH KHAD STORE",
-  description: "Affordable Prices. Trusted Quality. Everything Farmers Need.",
-  keywords: "Punjab Agriculture, Indian Agriculture, Crops, Punjab Store,  Kharif, Rabi, Zaid, Wheat, Rice, Spices, Cardamom, Indian Spices, Smart Farming",
+  title: "Baba Deep Singh Khad Store | Fertilizer & Seed Store Amritsar",
+  description: "Baba Deep Singh Khad Store offers quality fertilizers, seeds, pesticides, and trusted agricultural products with reliable solutions for every farmer.",
+  alternates: {
+    canonical: "https://babadeepsinghkhadstore.in/",
+  },
+  keywords: "Baba deep singh khand store, seeds store Amritsar, fertilizer store in Amritsar, Agricultural products store",
+  robots: {
+    index: true,
+    follow: true,
+  }
 };
 
 export default function RootLayout({

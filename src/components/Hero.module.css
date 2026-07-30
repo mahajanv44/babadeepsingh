@@ -66,6 +66,19 @@
   -webkit-backdrop-filter: blur(8px);
 }
 
+
+.storeName {
+  font-size: clamp(1.8rem, 7vw, 2.5rem);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  line-height: 1.1;
+  font-family: var(--font-title), serif;
+  color: #13310b;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
 .title {
   font-size: clamp(1.8rem, 7vw, 3.5rem);
   font-weight: 800;
