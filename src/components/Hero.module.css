@@ -1,6 +1,6 @@
 .heroContainer {
   position: relative;
-  min-height: 85vh;
+  min-height: 88vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -203,4 +203,16 @@
   top: 6px;
   left: 50%;
   transform: translateX(-50%);
+}
+
+
+@media (max-width: 768px) {
+
+
+.storeName {
+  font-size: clamp(1rem, 7vw, 2.5rem);
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
 }
