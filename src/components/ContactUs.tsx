@@ -111,7 +111,16 @@ export default function ContactUs({ onClose }: ContactUsProps) {
             <motion.div variants={itemVariants} className={styles.infoSection}>
               <h3 className={styles.sectionTitle}>Business Information</h3>
 
-<br />
+
+              <div className={styles.infoItem}>
+                <h4>Business Hours</h4>
+                <p>
+                  Monday - Friday: 9:00 AM - 7:00 PM<br />
+                  Saturday: 9:00 AM - 6:30 PM<br />
+                  Sunday: Closed
+                </p>
+              </div>
+
               <div className={styles.infoItem}>
                 <h4>Address</h4>
                 <p>
@@ -135,14 +144,6 @@ export default function ContactUs({ onClose }: ContactUsProps) {
                 </p>
               </div>
 
-              <div className={styles.infoItem}>
-                <h4>Business Hours</h4>
-                <p>
-                  Monday - Friday: 9:00 AM - 7:00 PM<br />
-                  Saturday: 9:00 AM - 6:30 PM<br />
-                  Sunday: Closed
-                </p>
-              </div>
             </motion.div>
 
             {/* Contact Form */}
