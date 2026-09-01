@@ -135,14 +135,14 @@ export default function ContactUs({ onClose }: ContactUsProps) {
                 </p>
               </div>
 
-              {/* <div className={styles.infoItem}>
+              <div className={styles.infoItem}>
                 <h4>Business Hours</h4>
                 <p>
-                  Monday - Friday: 9:00 AM - 6:00 PM<br />
-                  Saturday: 10:00 AM - 4:00 PM<br />
+                  Monday - Friday: 9:00 AM - 7:00 PM<br />
+                  Saturday: 9:00 AM - 6:30 PM<br />
                   Sunday: Closed
                 </p>
-              </div> */}
+              </div>
             </motion.div>
 
             {/* Contact Form */}
