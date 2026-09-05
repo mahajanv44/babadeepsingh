@@ -42,12 +42,12 @@ export default function ProductsSection() {
   const [activeImage, setActiveImage] = useState<string | null>(null);
 
   return (
-    <section id="products" className={styles.section}>
+    <section id="featured-products" className={styles.section}>
       <div className="container">
         <div className={styles.header}>
           <p className={styles.eyebrow}>Trusted Farm Inputs</p>
           <h2 className={styles.title}>
-ਮਜ਼ਬੂਤ ​​ਫਾਰਮਾਂ ਅਤੇ ਬਿਹਤਰ ਪੈਦਾਵਾਰ ਲਈ ਪ੍ਰੀਮੀਅਮ ਖੇਤੀਬਾੜੀ ਉਤਪਾਦ</h2>
+            ਮਜ਼ਬੂਤ ​​ਫਾਰਮਾਂ ਅਤੇ ਬਿਹਤਰ ਪੈਦਾਵਾਰ ਲਈ ਪ੍ਰੀਮੀਅਮ ਖੇਤੀਬਾੜੀ ਉਤਪਾਦ</h2>
           {/* <p className={styles.subtitle}>
             Explore dependable seeds, fertilizers, pesticides, and farming equipment from trusted Indian brands designed to help farmers grow with confidence.
           </p> */}

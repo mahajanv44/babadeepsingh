@@ -1,0 +1,631 @@
+/* ==========================================================================
+   Intro & Actions Section
+   ========================================================================== */
+.intro {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 32px;
+  align-items: stretch;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 148px 24px 44px;
+}
+
+.introCopy {
+  display: flex;
+  flex-direction: column;
+  padding: 32px;
+  border-radius: 20px;
+  background: #ffffff;
+  border: 1px solid rgba(75, 111, 66, 0.16);
+  box-shadow: 0 6px 24px rgba(29, 42, 25, 0.04);
+}
+
+.eyebrow {
+  margin-bottom: 12px;
+  color: var(--accent-gold);
+  font-size: 0.76rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.intro h1 {
+  font-size: clamp(2.2rem, 3.8vw, 3.2rem);
+  line-height: 1.12;
+  letter-spacing: -0.01em;
+  margin-bottom: 14px;
+  color: var(--text-primary);
+}
+
+.description {
+  color: var(--text-primary);
+  font-size: 0.98rem;
+  font-weight: 500;
+  line-height: 1.68;
+  margin-bottom: 10px;
+}
+
+.introSubText {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  line-height: 1.6;
+  margin-bottom: 22px;
+}
+
+.introHighlights {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: auto;
+  padding-top: 18px;
+  border-top: 1px dashed rgba(75, 111, 66, 0.16);
+}
+
+.introHighlightItem {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.86rem;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.highlightIcon {
+  color: var(--accent-green);
+  flex-shrink: 0;
+}
+
+.actions {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  height: 100%;
+}
+
+.action {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  flex: 1;
+  min-height: 72px;
+  padding: 12px 18px;
+  border-radius: 14px;
+  border: 1px solid rgba(75, 111, 66, 0.14);
+  background: #ffffff;
+  box-shadow: 0 4px 14px rgba(29, 42, 25, 0.03);
+  transition: var(--transition-smooth);
+  text-decoration: none;
+}
+
+.action:hover {
+  border-color: var(--accent-gold);
+  transform: translateX(5px);
+  box-shadow: 0 8px 24px rgba(199, 159, 42, 0.12);
+}
+
+.action svg {
+  width: 22px;
+  height: 22px;
+  color: var(--accent-gold);
+  flex-shrink: 0;
+}
+
+.action span {
+  display: grid;
+  gap: 2px;
+}
+
+.action strong {
+  color: var(--text-primary);
+  font-size: 0.95rem;
+}
+
+.action small {
+  color: var(--text-secondary);
+  font-size: 0.82rem;
+}
+
+/* ==========================================================================
+   Yield & Disease Consultation, Online & In-Person, Opening Hours
+   ========================================================================== */
+.consultation {
+  max-width: 1152px;
+  margin: 48px auto 0;
+  padding: 44px;
+  border: 1px solid rgba(75, 111, 66, 0.18);
+  border-radius: 24px;
+  background: linear-gradient(135deg, rgba(241, 234, 212, 0.72) 0%, rgba(255, 255, 255, 0.75) 100%);
+  box-shadow: 0 10px 32px rgba(29, 42, 25, 0.05);
+}
+
+.consultationIntro {
+  max-width: 720px;
+  margin-bottom: 36px;
+}
+
+.consultationIntro .eyebrow {
+  margin-bottom: 10px;
+}
+
+.consultationIntro h2 {
+  margin-bottom: 10px;
+  font-size: clamp(1.8rem, 3vw, 2.6rem);
+  line-height: 1.2;
+}
+
+.punjabiHighlight {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  line-height: 1.6;
+  margin-bottom: 6px;
+}
+
+.consultationSub {
+  color: var(--text-secondary);
+  font-size: 0.94rem;
+  line-height: 1.6;
+}
+
+.consultationGrid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 22px;
+}
+
+.consultationCard {
+  display: flex;
+  flex-direction: column;
+  padding: 28px 24px;
+  border: 1px solid rgba(75, 111, 66, 0.16);
+  border-radius: 18px;
+  background: #ffffff;
+  box-shadow: 0 4px 16px rgba(29, 42, 25, 0.04);
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+}
+
+.consultationCard:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 28px rgba(29, 42, 25, 0.08);
+  border-color: var(--accent-gold);
+}
+
+.cardTop {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.consultationIcon {
+  display: grid;
+  place-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  color: var(--accent-gold);
+  background: rgba(199, 159, 42, 0.12);
+  flex-shrink: 0;
+}
+
+.consultationIcon svg {
+  width: 22px;
+  height: 22px;
+}
+
+.optionLabel {
+  display: block;
+  color: var(--accent-gold);
+  font-size: 0.74rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.punjabiCardTag {
+  display: block;
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--accent-green);
+  margin-top: 1px;
+}
+
+.consultationCard h3 {
+  font-size: 1.15rem;
+  line-height: 1.3;
+  color: var(--text-primary);
+  margin-bottom: 10px;
+}
+
+.cardPunjabiDesc {
+  color: var(--text-primary);
+  font-size: 0.92rem;
+  line-height: 1.6;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+.cardEnglishDesc {
+  color: var(--text-muted);
+  font-size: 0.86rem;
+  line-height: 1.55;
+  margin-bottom: 18px;
+  flex-grow: 1;
+}
+
+.consultationLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--accent-green);
+  font-size: 0.88rem;
+  font-weight: 700;
+  text-decoration: none;
+  margin-top: auto;
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.consultationLink:hover {
+  color: var(--accent-gold);
+  transform: translateX(3px);
+}
+
+/* Opening Hours Card */
+.hoursCard {
+  background: #ffffff;
+}
+
+.hoursSchedule {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+
+.scheduleRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 8px;
+  border-bottom: 1px dashed rgba(75, 111, 66, 0.14);
+  font-size: 0.88rem;
+}
+
+.scheduleRow span {
+  color: var(--text-secondary);
+}
+
+.scheduleRow strong {
+  color: var(--text-primary);
+  font-size: 0.9rem;
+}
+
+.closedText {
+  color: #c53030 !important;
+}
+
+.hoursNote {
+  font-size: 0.86rem !important;
+  color: var(--accent-green) !important;
+  font-weight: 600;
+  line-height: 1.5;
+  margin-bottom: 0 !important;
+  padding-top: 4px;
+}
+
+/* Bottom Topics Strip */
+.consultationTopics {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  margin-top: 32px;
+  padding-top: 24px;
+  border-top: 1px solid rgba(75, 111, 66, 0.15);
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.consultationTopics span {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.consultationTopics svg {
+  width: 17px;
+  height: 17px;
+  color: var(--accent-green);
+}
+
+/* ==========================================================================
+   Map Section
+   ========================================================================== */
+.mapSection {
+  max-width: 1152px;
+  margin: 56px auto 0;
+  padding: 0 24px;
+}
+
+.mapCard {
+  border-radius: 20px;
+  overflow: hidden;
+  background: #ffffff;
+  border: 1px solid rgba(75, 111, 66, 0.18);
+  box-shadow: 0 12px 36px rgba(29, 42, 25, 0.08);
+}
+
+.mapWrapper {
+  width: 100%;
+  height: 420px;
+  background: #e8e2d4;
+}
+
+.mapWrapper iframe {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.mapBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 20px 28px;
+  background: #ffffff;
+  border-top: 1px solid rgba(75, 111, 66, 0.12);
+}
+
+.mapBarInfo {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.mapIcon {
+  color: var(--accent-green);
+  flex-shrink: 0;
+}
+
+.mapBarInfo strong {
+  display: block;
+  font-size: 1.05rem;
+  color: var(--text-primary);
+  margin-bottom: 2px;
+}
+
+.mapBarInfo p {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+}
+
+.mapDirectionBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 22px;
+  border-radius: 999px;
+  background: var(--text-primary);
+  color: #f8f4ec;
+  font-size: 0.88rem;
+  font-weight: 600;
+  text-decoration: none;
+  white-space: nowrap;
+  box-shadow: 0 4px 14px rgba(29, 42, 25, 0.15);
+  transition: all 0.25s ease;
+}
+
+.mapDirectionBtn:hover {
+  background: #2d3f27;
+  transform: translateY(-2px);
+  color: #fff;
+}
+
+/* ==========================================================================
+   FAQ Section
+   ========================================================================== */
+.faqSection {
+  max-width: 1152px;
+  margin: 56px auto 90px;
+  padding: 0 24px;
+}
+
+.faqContainer {
+  width: 100%;
+  padding: 42px;
+  border: 1px solid rgba(75, 111, 66, 0.18);
+  border-radius: 20px;
+  background: #ffffff;
+  box-shadow: 0 8px 28px rgba(29, 42, 25, 0.05);
+}
+
+.faqHeader {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.faqBadge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 12px;
+  padding: 4px 14px;
+  border-radius: 999px;
+  background: rgba(199, 159, 42, 0.12);
+  border: 1px solid rgba(199, 159, 42, 0.28);
+  color: var(--accent-gold);
+  font-size: 0.76rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.faqHeader h2 {
+  font-size: clamp(1.8rem, 2.8vw, 2.4rem);
+  line-height: 1.2;
+  margin-bottom: 8px;
+}
+
+.faqHeader p {
+  color: var(--text-secondary);
+  font-size: 0.96rem;
+}
+
+.accordionList {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.accordionItem {
+  border-radius: 14px;
+  background: #faf8f3;
+  border: 1px solid rgba(75, 111, 66, 0.15);
+  overflow: hidden;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.accordionItemOpen {
+  border-color: var(--accent-gold);
+  background: #ffffff;
+  box-shadow: 0 6px 20px rgba(199, 159, 42, 0.1);
+}
+
+.accordionQuestion {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 18px 22px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  text-align: left;
+}
+
+.accordionQuestion > div {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.punjabiFaqQ {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  line-height: 1.35;
+}
+
+.englishFaqQ {
+  font-size: 0.84rem;
+  font-weight: 500;
+  color: var(--text-muted);
+}
+
+.accordionChevron {
+  color: var(--accent-green);
+  flex-shrink: 0;
+  transition: transform 0.25s ease;
+}
+
+.chevronOpen {
+  transform: rotate(180deg);
+  color: var(--accent-gold);
+}
+
+.accordionAnswerWrap {
+  overflow: hidden;
+}
+
+.accordionAnswer {
+  padding: 0 22px 20px;
+  color: var(--text-secondary);
+  font-size: 0.94rem;
+  line-height: 1.7;
+  border-top: 1px dashed rgba(75, 111, 66, 0.12);
+  padding-top: 14px;
+}
+
+/* ==========================================================================
+   Responsive Breakpoints
+   ========================================================================== */
+@media (max-width: 960px) {
+  .intro {
+    grid-template-columns: 1fr;
+    gap: 32px;
+    padding-top: 128px;
+  }
+
+  .consultationGrid {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .mapBar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 14px;
+  }
+
+  .mapWrapper {
+    height: 320px;
+  }
+}
+
+@media (max-width: 600px) {
+  .intro {
+    padding: 116px 16px 36px;
+    gap: 20px;
+  }
+
+  .introCopy {
+    padding: 24px 18px;
+  }
+
+  .intro h1 {
+    font-size: 2.2rem;
+  }
+
+  .description {
+    font-size: 0.94rem;
+  }
+
+  .consultation {
+    margin: 40px 16px 0;
+    padding: 24px 18px;
+    border-radius: 18px;
+  }
+
+  .mapSection {
+    margin: 40px auto 0;
+    padding: 0 16px;
+  }
+
+  .mapWrapper {
+    height: 260px;
+  }
+
+  .mapBar {
+    padding: 16px;
+  }
+
+  .faqSection {
+    margin: 40px auto 70px;
+    padding: 0 16px;
+  }
+
+  .faqContainer {
+    padding: 28px 18px;
+  }
+
+  .accordionQuestion {
+    padding: 16px 18px;
+  }
+
+  .accordionAnswer {
+    padding: 0 18px 18px;
+    padding-top: 12px;
+  }
+}

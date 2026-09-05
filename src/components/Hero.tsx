@@ -2,12 +2,13 @@
 
 import React, { useRef } from "react";
 import Image from "next/image";
+import Link from "next/link";
 import { motion, useScroll, useTransform } from "framer-motion";
 import styles from "./Hero.module.css";
 
 interface HeroProps {
-  onExploreClick: () => void;
-  onMandiClick: () => void;
+  onExploreClick?: () => void;
+  onMandiClick?: () => void;
 }
 
 export default function Hero({ onExploreClick, onMandiClick }: HeroProps) {
@@ -27,14 +28,7 @@ export default function Hero({ onExploreClick, onMandiClick }: HeroProps) {
         className={styles.bgWrapper} 
         style={{ y: bgY, scale: bgScale }}
       >
-        <Image
-          src="/images/hero_agri_bg.png"
-          alt="Indian Agriculture Fields Sunrise"
-          className={styles.bgImage}
-          fill
-          priority
-          sizes="100vw"
-        />
+
         <div className={styles.overlay} />
       </motion.div>
 
@@ -96,12 +90,9 @@ export default function Hero({ onExploreClick, onMandiClick }: HeroProps) {
           transition={{ duration: 0.8, delay: 0.8 }}
           className={styles.ctaGroup}
         >
-          <button className={styles.primaryBtn} onClick={onExploreClick}>
-            Explore Crops
-          </button>
-          {/* <button className={styles.secondaryBtn} onClick={onMandiClick}>
-            Mandi Rates
-          </button> */}
+          <Link href="/products" className={styles.primaryBtn}>
+            Explore Products
+          </Link>
         </motion.div>
       </motion.div>
 

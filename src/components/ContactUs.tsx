@@ -96,16 +96,16 @@ export default function ContactUs({ onClose }: ContactUsProps) {
 
           <div className={styles.flexContainer}>
 
-<div className={styles.imageWrapper}>
+            <div className={styles.imageWrapper}>
 
- <Image
-    src="/images/f1.avif"
-    alt="Agriculture"
-    fill
-    className="object-cover"
-    priority
-  />
-</div>
+              <Image
+                src="/images/f1.avif"
+                alt="Agriculture"
+                fill
+                className="object-cover"
+                priority
+              />
+            </div>
 
             {/* Contact Information */}
             <motion.div variants={itemVariants} className={styles.infoSection}>
@@ -125,13 +125,13 @@ export default function ContactUs({ onClose }: ContactUsProps) {
                 <h4>Address</h4>
                 <p>
                   Gumtala near SBI Bank, Airport Road, Amritsar (Amritsar 143008)
-                 </p>
+                </p>
               </div>
 
               <div className={styles.infoItem}>
                 <h4>Phone</h4>
                 <p>
-                 +91-9815265705 , +91-9780240800
+                  +91-9815265705 , +91-9780240800
                 </p>
               </div>
 
@@ -139,7 +139,7 @@ export default function ContactUs({ onClose }: ContactUsProps) {
                 <h4>Email</h4>
                 <p>
                   <a href="mailto:babadeepsinghkhadstore@gmail.com">
-                     babadeepsinghkhadstore@gmail.com
+                    babadeepsinghkhadstore@gmail.com
                   </a>
                 </p>
               </div>

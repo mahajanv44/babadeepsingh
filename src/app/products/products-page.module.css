@@ -1,0 +1,1069 @@
+/* ==========================================================================
+   Products Page Styles - Exact Match to Site Aesthetic (Cream, Gold, White)
+   ========================================================================== */
+
+.pageContainer {
+  min-height: 100vh;
+  background-color: var(--bg-primary, #f8f4ec);
+  color: var(--text-primary, #1d2a19);
+}
+
+/* Hero Section */
+.heroSection {
+  padding: 150px 24px 44px;
+  background: linear-gradient(
+    180deg,
+    rgba(241, 234, 212, 0.6) 0%,
+    var(--bg-primary, #f8f4ec) 100%
+  );
+  border-bottom: 1px solid rgba(75, 111, 66, 0.12);
+  text-align: center;
+}
+
+.heroHeader {
+  max-width: 860px;
+  margin: 0 auto 36px;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 18px;
+  padding: 6px 16px;
+  border-radius: 999px;
+  background: rgba(199, 159, 42, 0.12);
+  border: 1px solid rgba(199, 159, 42, 0.3);
+  color: var(--accent-gold, #c79f2a);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.heroTitle {
+  font-size: clamp(2.2rem, 4vw, 3.4rem);
+  line-height: 1.12;
+  letter-spacing: -0.01em;
+  margin-bottom: 14px;
+  color: var(--text-primary, #1d2a19);
+}
+
+.heroPunjabi {
+  font-size: 1.15rem;
+  color: var(--accent-gold, #c79f2a);
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.heroSub {
+  color: var(--text-secondary, #56664b);
+  font-size: 1.02rem;
+  line-height: 1.7;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* Slider / Top Carousel (Matching Site Card Style) */
+/* Compact Split Banner Layout */
+.sliderWrapper {
+  max-width: 1200px;
+  margin: 0 auto 16px;
+  position: relative;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.98) 0%, rgba(248, 244, 236, 0.75) 100%);
+  border: 1px solid rgba(75, 111, 66, 0.16);
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(29, 42, 25, 0.06);
+  overflow: hidden;
+  text-align: left;
+}
+
+.sliderTrack {
+  position: relative;
+  min-height: 180px;
+  display: flex;
+  align-items: center;
+}
+
+.slideContent {
+  display: grid;
+  grid-template-columns: 190px minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 1.75rem;
+  padding: 1.4rem 3.8rem;
+  width: 100%;
+}
+
+.slideVisual {
+  position: relative;
+  height: 145px;
+  width: 190px;
+  border-radius: 14px;
+  overflow: hidden;
+  background: #ffffff;
+  border: 1px solid rgba(75, 111, 66, 0.12);
+  box-shadow: 0 4px 14px rgba(29, 42, 25, 0.05);
+  flex-shrink: 0;
+}
+
+.slideImg {
+  object-fit: contain;
+  padding: 8px;
+  transition: transform 0.4s ease;
+}
+
+.slideVisual:hover .slideImg {
+  transform: scale(1.06);
+}
+
+.slideCategoryTag {
+  position: absolute;
+  bottom: 6px;
+  left: 6px;
+  right: 6px;
+  background: rgba(29, 42, 25, 0.82);
+  backdrop-filter: blur(4px);
+  color: #ffffff;
+  font-size: 0.68rem;
+  font-weight: 700;
+  padding: 2px 6px;
+  border-radius: 6px;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.slideInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  min-width: 0;
+}
+
+.slideMetaRow {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.slideCategoryBadge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.2rem 0.65rem;
+  border-radius: 999px;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--accent-gold, #c79f2a);
+  background: rgba(199, 159, 42, 0.12);
+  border: 1px solid rgba(199, 159, 42, 0.28);
+  width: fit-content;
+}
+
+.slideTitleWrap {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 8px 12px;
+}
+
+.slideTitle {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--text-primary, #1d2a19);
+  line-height: 1.2;
+}
+
+.slidePunjabiTitle {
+  font-size: 1.05rem;
+  color: var(--accent-gold, #c79f2a);
+  font-weight: 600;
+}
+
+.slideText {
+  font-size: 0.88rem;
+  color: var(--text-secondary, #56664b);
+  line-height: 1.5;
+  margin-top: 2px;
+}
+
+.slidePunjabiText {
+  font-size: 0.82rem;
+  color: var(--text-muted, #7d836d);
+  line-height: 1.45;
+}
+
+.slideActionCol {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  flex-shrink: 0;
+}
+
+.slideCtaBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.65rem 1.35rem;
+  background: var(--text-primary, #1d2a19);
+  color: #f8f4ec;
+  border: none;
+  border-radius: 999px;
+  font-size: 0.84rem;
+  font-weight: 700;
+  cursor: pointer;
+  white-space: nowrap;
+  box-shadow: 0 4px 14px rgba(29, 42, 25, 0.15);
+  transition: all 0.2s ease;
+}
+
+.slideCtaBtn:hover {
+  background: var(--accent-green, #4b6f42);
+  color: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(75, 111, 66, 0.25);
+}
+
+.slidePunjabiCtaText {
+  font-size: 0.72rem;
+  color: var(--text-muted);
+  font-weight: 600;
+}
+
+/* Slider Controls */
+.sliderNavBtn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(75, 111, 66, 0.18);
+  color: var(--text-primary, #1d2a19);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 10;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+  transition: all 0.2s ease;
+}
+
+.sliderNavBtn:hover {
+  background: var(--accent-gold, #c79f2a);
+  border-color: var(--accent-gold, #c79f2a);
+  color: #ffffff;
+  transform: translateY(-50%) scale(1.08);
+}
+
+.prevBtn {
+  left: 10px;
+}
+
+.nextBtn {
+  right: 10px;
+}
+
+.sliderDots {
+  display: flex;
+  justify-content: center;
+  gap: 0.4rem;
+  padding: 0.55rem 0 0.7rem;
+  background: rgba(241, 234, 212, 0.35);
+  border-top: 1px solid rgba(75, 111, 66, 0.08);
+}
+
+.sliderDot {
+  width: 7px;
+  height: 7px;
+  border-radius: 9999px;
+  background: rgba(75, 111, 66, 0.22);
+  border: none;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  padding: 0;
+}
+
+.sliderDotActive {
+  width: 22px;
+  background: var(--accent-gold, #c79f2a);
+}
+
+/* Category Navigation Bar (Single Line) */
+.filterSection {
+  max-width: 1240px;
+  margin: 0 auto 2.2rem;
+  padding: 24px 24px 0;
+}
+
+/* Category Pills (Single line with smooth scroll) */
+.categoryPills {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  overflow-x: auto;
+  white-space: nowrap;
+  padding: 6px 4px 10px;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(199, 159, 42, 0.4) transparent;
+}
+
+.categoryPills::-webkit-scrollbar {
+  height: 5px;
+}
+
+.categoryPills::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.categoryPills::-webkit-scrollbar-thumb {
+  background: rgba(199, 159, 42, 0.35);
+  border-radius: 999px;
+}
+
+.categoryPill {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.7rem 1.25rem;
+  background: rgba(255, 255, 255, 0.85);
+  border: 1px solid rgba(75, 111, 66, 0.18);
+  border-radius: 999px;
+  color: var(--text-primary, #1d2a19);
+  font-size: 0.86rem;
+  font-weight: 600;
+  cursor: pointer;
+  white-space: nowrap;
+  box-shadow: 0 2px 8px rgba(29, 42, 25, 0.03);
+  transition: all 0.25s ease;
+}
+
+.categoryPill:hover {
+  border-color: var(--accent-gold, #c79f2a);
+  background: #ffffff;
+  color: #000000;
+  transform: translateY(-1px);
+}
+
+.categoryPillActive {
+  background: var(--text-primary, #1d2a19);
+  border-color: var(--text-primary, #1d2a19);
+  color: #f8f4ec;
+  box-shadow: 0 4px 16px rgba(29, 42, 25, 0.18);
+}
+
+.categoryPillActive:hover {
+  background: #000000;
+  border-color: #000000;
+  color: #ffffff;
+  transform: translateY(-1px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+}
+
+.pillCount {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 20px;
+  height: 20px;
+  padding: 0 6px;
+  border-radius: 999px;
+  font-size: 0.72rem;
+  font-weight: 700;
+  background: rgba(75, 111, 66, 0.12);
+  color: var(--accent-green, #4b6f42);
+}
+
+.categoryPillActive .pillCount {
+  background: rgba(199, 159, 42, 0.25);
+  color: var(--accent-gold, #c79f2a);
+}
+
+.categoryPillActive:hover .pillCount {
+  background: rgba(199, 159, 42, 0.35);
+  color: var(--accent-gold, #c79f2a);
+}
+
+/* Products Grid */
+.productsContainer {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 24px 60px;
+}
+
+.resultsHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  color: var(--text-secondary, #56664b);
+  font-size: 0.9rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+/* Product Card (Matching Site Card Style) */
+.card {
+  background: #ffffff;
+  border: 1px solid rgba(75, 111, 66, 0.14);
+  border-radius: 18px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 6px 20px rgba(29, 42, 25, 0.05);
+  transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.35s ease, border-color 0.25s ease;
+  position: relative;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  border-color: rgba(199, 159, 42, 0.35);
+  box-shadow: 0 18px 40px rgba(29, 42, 25, 0.1);
+}
+
+.cardImageWrap {
+  position: relative;
+  height: 210px;
+  width: 100%;
+  background: #ffffff;
+  border-bottom: 1px solid rgba(75, 111, 66, 0.08);
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cardImage {
+  object-fit: contain;
+  padding: 12px;
+  transition: transform 0.5s ease;
+}
+
+.card:hover .cardImage {
+  transform: scale(1.06);
+}
+
+.cardBody {
+  padding: 1.35rem;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.categoryTag {
+  font-size: 0.74rem;
+  font-weight: 700;
+  color: var(--accent-gold, #c79f2a);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 0.35rem;
+}
+
+.cardTitle {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--text-primary, #1d2a19);
+  line-height: 1.3;
+  margin-bottom: 0.25rem;
+}
+
+.cardPunjabiTitle {
+  font-size: 0.95rem;
+  color: var(--accent-green, #4b6f42);
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+}
+
+.packSizeRow {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  background: rgba(199, 159, 42, 0.1);
+  border: 1px solid rgba(199, 159, 42, 0.25);
+  padding: 0.3rem 0.7rem;
+  border-radius: 999px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--text-primary, #1d2a19);
+  margin-bottom: 0.75rem;
+  width: fit-content;
+}
+
+.cardActions {
+  display: flex;
+  margin-top: auto;
+  padding-top: 1rem;
+}
+
+.detailsBtn {
+  width: 100%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.45rem;
+  padding: 0.72rem 1.1rem;
+  background: rgba(241, 234, 212, 0.6);
+  border: 1px solid rgba(75, 111, 66, 0.22);
+  color: var(--text-primary, #1d2a19);
+  border-radius: 999px;
+  font-size: 0.86rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.detailsBtn:hover {
+  background: var(--text-primary, #1d2a19);
+  border-color: var(--text-primary, #1d2a19);
+  color: #f8f4ec;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 14px rgba(29, 42, 25, 0.12);
+}
+
+/* Pagination Styling */
+.paginationWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 2.75rem;
+  padding: 16px 0 8px;
+}
+
+.pageArrowBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 18px;
+  border-radius: 999px;
+  background: #ffffff;
+  border: 1px solid rgba(75, 111, 66, 0.22);
+  color: var(--text-primary, #1d2a19);
+  font-size: 0.86rem;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(29, 42, 25, 0.04);
+  transition: all 0.2s ease;
+}
+
+.pageArrowBtn:hover:not(:disabled) {
+  background: var(--text-primary, #1d2a19);
+  border-color: var(--text-primary, #1d2a19);
+  color: #ffffff;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(29, 42, 25, 0.12);
+}
+
+.pageArrowBtn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+  border-color: rgba(75, 111, 66, 0.12);
+}
+
+.pageNumbers {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.pageNumberBtn {
+  display: grid;
+  place-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #ffffff;
+  border: 1px solid rgba(75, 111, 66, 0.2);
+  color: var(--text-primary, #1d2a19);
+  font-size: 0.92rem;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(29, 42, 25, 0.04);
+  transition: all 0.2s ease;
+}
+
+.pageNumberBtn:hover:not(.pageNumberBtnActive) {
+  background: rgba(199, 159, 42, 0.12);
+  border-color: rgba(199, 159, 42, 0.4);
+  color: var(--accent-gold, #c79f2a);
+  transform: translateY(-1px);
+}
+
+.pageNumberBtnActive {
+  background: var(--accent-gold, #c79f2a);
+  border-color: var(--accent-gold, #c79f2a);
+  color: #ffffff;
+  box-shadow: 0 4px 14px rgba(199, 159, 42, 0.35);
+}
+
+/* Empty State */
+.emptyState {
+  text-align: center;
+  padding: 4rem 2rem;
+  background: #ffffff;
+  border-radius: 20px;
+  border: 1px dashed rgba(75, 111, 66, 0.25);
+  box-shadow: 0 8px 24px rgba(29, 42, 25, 0.04);
+}
+
+.emptyStateTitle {
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.emptyStateText {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  margin-bottom: 1.5rem;
+}
+
+.resetBtn {
+  padding: 0.7rem 1.8rem;
+  background: var(--text-primary, #1d2a19);
+  color: #f8f4ec;
+  border: none;
+  border-radius: 999px;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 4px 14px rgba(29, 42, 25, 0.15);
+  transition: all 0.2s ease;
+}
+
+.resetBtn:hover {
+  background: #2a3d24;
+}
+
+/* Rental Machinery Callout (Matching Community Callout Style) */
+.rentalBanner {
+  max-width: 1240px;
+  margin: 0 auto 3.5rem;
+  padding: 0 24px;
+}
+
+.rentalCard {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  padding: 44px 48px;
+  background: var(--text-primary, #1d2a19);
+  border-radius: 24px;
+  color: #f8f4ec;
+  box-shadow: 0 20px 48px rgba(29, 42, 25, 0.16);
+}
+
+.rentalCopy {
+  max-width: 600px;
+}
+
+.rentalBadge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 12px;
+  padding: 5px 14px;
+  border-radius: 999px;
+  background: rgba(199, 159, 42, 0.18);
+  border: 1px solid rgba(199, 159, 42, 0.35);
+  color: var(--accent-gold, #c79f2a);
+  font-size: 0.74rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.rentalCopy h3 {
+  font-size: clamp(1.6rem, 2.8vw, 2.3rem);
+  color: #f8f4ec;
+  line-height: 1.15;
+  margin-bottom: 6px;
+}
+
+.rentalPunjabi {
+  font-size: 1.05rem;
+  color: var(--accent-gold, #c79f2a);
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.rentalText {
+  color: rgba(248, 244, 236, 0.82);
+  font-size: 0.96rem;
+  line-height: 1.68;
+  margin-bottom: 1.5rem;
+}
+
+.rentalFeatures {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.85rem;
+  margin-bottom: 1.75rem;
+}
+
+.rentalFeatureItem {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.88rem;
+  color: #f8f4ec;
+  font-weight: 500;
+}
+
+.rentalCallBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 28px;
+  border-radius: 999px;
+  background: var(--accent-gold, #c79f2a);
+  color: var(--text-primary, #1d2a19);
+  font-size: 0.94rem;
+  font-weight: 700;
+  white-space: nowrap;
+  box-shadow: 0 8px 24px rgba(199, 159, 42, 0.3);
+  text-decoration: none;
+  transition: all 0.25s ease;
+  width: fit-content;
+}
+
+.rentalCallBtn:hover {
+  background: #deb336;
+  transform: translateY(-2px);
+  box-shadow: 0 12px 30px rgba(199, 159, 42, 0.45);
+}
+
+.rentalVisual {
+  position: relative;
+  width: 380px;
+  height: 250px;
+  border-radius: 18px;
+  overflow: hidden;
+  border: 4px solid #ffffff;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.2);
+  flex-shrink: 0;
+}
+
+.rentalImg {
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.rentalVisual:hover .rentalImg {
+  transform: scale(1.05);
+}
+
+/* Trust / Assurance Bar */
+.trustBar {
+  max-width: 1240px;
+  margin: 0 auto 3rem;
+  padding: 0 24px;
+}
+
+.trustGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.25rem;
+}
+
+.trustItem {
+  background: #ffffff;
+  border: 1px solid rgba(75, 111, 66, 0.14);
+  border-radius: 16px;
+  padding: 1.35rem;
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+  box-shadow: 0 4px 14px rgba(29, 42, 25, 0.04);
+}
+
+.trustIcon {
+  color: var(--accent-gold, #c79f2a);
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.trustInfo strong {
+  display: block;
+  font-size: 0.95rem;
+  color: var(--text-primary, #1d2a19);
+  margin-bottom: 0.25rem;
+}
+
+.trustInfo p {
+  font-size: 0.84rem;
+  color: var(--text-secondary, #56664b);
+  line-height: 1.45;
+}
+
+/* Modal Specs Overlay */
+.modalOverlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(29, 42, 25, 0.6);
+  backdrop-filter: blur(6px);
+  z-index: 2000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.modalContent {
+  background: #ffffff;
+  border: 1px solid rgba(75, 111, 66, 0.2);
+  border-radius: 20px;
+  max-width: 580px;
+  width: 100%;
+  max-height: 90vh;
+  overflow-y: auto;
+  position: relative;
+  box-shadow: 0 25px 50px -12px rgba(29, 42, 25, 0.25);
+}
+
+.modalCloseBtn {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  background: rgba(29, 42, 25, 0.08);
+  border: none;
+  color: var(--text-primary);
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 10;
+  transition: all 0.2s ease;
+}
+
+.modalCloseBtn:hover {
+  background: var(--accent-gold);
+  color: #ffffff;
+}
+
+.modalImageWrap {
+  position: relative;
+  height: 220px;
+  width: 100%;
+  background: #ffffff;
+  border-bottom: 1px solid rgba(75, 111, 66, 0.1);
+}
+
+.modalImage {
+  object-fit: contain;
+  padding: 12px;
+}
+
+.modalBody {
+  padding: 1.5rem 1.75rem 2rem;
+}
+
+.modalBadge {
+  display: inline-block;
+  padding: 0.3rem 0.75rem;
+  background: rgba(199, 159, 42, 0.12);
+  border: 1px solid rgba(199, 159, 42, 0.3);
+  color: var(--accent-gold, #c79f2a);
+  border-radius: 999px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  margin-bottom: 0.6rem;
+}
+
+.modalTitle {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--text-primary, #1d2a19);
+  margin-bottom: 0.2rem;
+}
+
+.modalPunjabiTitle {
+  font-size: 1.1rem;
+  color: var(--accent-gold, #c79f2a);
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.specRow {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 0.75rem;
+  font-size: 0.88rem;
+}
+
+.specLabel {
+  color: var(--text-secondary, #56664b);
+  min-width: 120px;
+  font-weight: 600;
+}
+
+.specVal {
+  color: var(--text-primary, #1d2a19);
+}
+
+.modalDesc {
+  font-size: 0.92rem;
+  color: var(--text-secondary, #56664b);
+  line-height: 1.6;
+  margin: 1rem 0 0.5rem;
+}
+
+.modalPunjabiDesc {
+  font-size: 0.86rem;
+  color: var(--text-muted, #7d836d);
+  line-height: 1.5;
+  margin-bottom: 0.5rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 960px) {
+  .slideContent {
+    grid-template-columns: 160px minmax(0, 1fr);
+    padding: 1.25rem 2.8rem;
+    gap: 1.25rem;
+  }
+
+  .slideVisual {
+    width: 160px;
+    height: 130px;
+  }
+
+  .slideActionCol {
+    grid-column: 1 / -1;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 4px;
+    padding-top: 10px;
+    border-top: 1px solid rgba(75, 111, 66, 0.1);
+  }
+
+  .rentalCard {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 32px 28px;
+  }
+
+  .rentalVisual {
+    width: 100%;
+    height: 200px;
+  }
+}
+
+@media (max-width: 640px) {
+  .heroSection {
+    padding: 116px 16px 24px;
+  }
+
+  .heroTitle {
+    font-size: 2.15rem;
+  }
+
+  .sliderWrapper {
+    border-radius: 18px;
+    margin: 0 auto 14px;
+  }
+
+  .slideContent {
+    grid-template-columns: 1fr;
+    padding: 1rem 1rem 1.35rem;
+    gap: 1.1rem;
+    text-align: left;
+  }
+
+  .slideVisual {
+    width: 100%;
+    height: 230px;
+    border-radius: 16px;
+    overflow: hidden;
+    position: relative;
+    background: #ffffff;
+  }
+
+  .slideImg {
+    object-fit: contain;
+    padding: 10px;
+  }
+
+  .slideCategoryTag {
+    bottom: 10px;
+    left: 10px;
+    right: auto;
+    background: rgba(29, 42, 25, 0.88);
+    backdrop-filter: blur(6px);
+    color: #ffffff;
+    font-size: 0.74rem;
+    padding: 4px 10px;
+    border-radius: 8px;
+  }
+
+  .slideMetaRow {
+    justify-content: flex-start;
+  }
+
+  .slideTitleWrap {
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 2px;
+  }
+
+  .slideTitle {
+    font-size: 1.35rem;
+  }
+
+  .slidePunjabiTitle {
+    font-size: 1.05rem;
+  }
+
+  .slideText {
+    font-size: 0.88rem;
+  }
+
+  .slidePunjabiText {
+    font-size: 0.82rem;
+  }
+
+  .slideActionCol {
+    flex-direction: column;
+    width: 100%;
+    gap: 6px;
+    margin-top: 2px;
+  }
+
+  .slideCtaBtn {
+    width: 100%;
+    justify-content: center;
+    padding: 0.75rem 1.4rem;
+    font-size: 0.9rem;
+  }
+
+  .prevBtn {
+    left: 8px;
+    top: 115px;
+  }
+
+  .nextBtn {
+    right: 8px;
+    top: 115px;
+  }
+
+  .rentalFeatures {
+    grid-template-columns: 1fr;
+  }
+}

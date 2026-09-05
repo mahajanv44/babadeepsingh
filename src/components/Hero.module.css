@@ -117,6 +117,10 @@
 }
 
 .primaryBtn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
   background: var(--accent-gold);
   border: 1px solid var(--accent-gold);
   color: var(--bg-primary);
