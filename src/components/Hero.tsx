@@ -60,7 +60,9 @@ export default function Hero({ onExploreClick, onMandiClick }: HeroProps) {
           />
         </motion.div>
 
-        <h1 className={styles.storeName}>Baba Deep Singh Khad Store</h1>
+        <h1 className={styles.storeName}>
+          <span className={styles.khandaIcon}>☬</span> Baba Deep Singh Khad Store <span className={styles.khandaIcon}>☬</span>
+        </h1>
 
         {/* Animated Title */}
         <motion.p

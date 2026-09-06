@@ -81,7 +81,9 @@
   flex-direction: column;
   gap: 10px;
   height: 100%;
+  scroll-margin-top: 100px;
 }
+
 
 .action {
   display: flex;
@@ -289,16 +291,17 @@
   justify-content: space-between;
   padding-bottom: 8px;
   border-bottom: 1px dashed rgba(75, 111, 66, 0.14);
-  font-size: 0.88rem;
+  font-size: 0.82rem;
 }
 
 .scheduleRow span {
   color: var(--text-secondary);
+  font-size: 0.82rem;
 }
 
 .scheduleRow strong {
   color: var(--text-primary);
-  font-size: 0.9rem;
+  font-size: 0.84rem;
 }
 
 .closedText {
@@ -306,10 +309,10 @@
 }
 
 .hoursNote {
-  font-size: 0.86rem !important;
+  font-size: 0.75rem !important;
   color: var(--accent-green) !important;
   font-weight: 600;
-  line-height: 1.5;
+  line-height: 1.45;
   margin-bottom: 0 !important;
   padding-top: 4px;
 }
@@ -346,6 +349,7 @@
   max-width: 1152px;
   margin: 56px auto 0;
   padding: 0 24px;
+  scroll-margin-top: 100px;
 }
 
 .mapCard {
@@ -558,9 +562,17 @@
     padding-top: 128px;
   }
 
+  .actions {
+    scroll-margin-top: 90px;
+  }
+
   .consultationGrid {
     grid-template-columns: 1fr;
     gap: 18px;
+  }
+
+  .mapSection {
+    scroll-margin-top: 90px;
   }
 
   .mapBar {
@@ -584,6 +596,10 @@
     padding: 24px 18px;
   }
 
+  .actions {
+    scroll-margin-top: 85px;
+  }
+
   .intro h1 {
     font-size: 2.2rem;
   }
@@ -598,9 +614,32 @@
     border-radius: 18px;
   }
 
+  .scheduleRow {
+    font-size: 0.78rem;
+    padding-bottom: 7px;
+    gap: 8px;
+  }
+
+  .scheduleRow span {
+    font-size: 0.78rem;
+    line-height: 1.35;
+  }
+
+  .scheduleRow strong {
+    font-size: 0.8rem;
+    white-space: nowrap;
+    text-align: right;
+  }
+
+  .hoursNote {
+    font-size: 0.72rem !important;
+    line-height: 1.4 !important;
+  }
+
   .mapSection {
     margin: 40px auto 0;
     padding: 0 16px;
+    scroll-margin-top: 85px;
   }
 
   .mapWrapper {

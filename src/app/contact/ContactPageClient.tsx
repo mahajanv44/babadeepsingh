@@ -57,7 +57,7 @@ export default function ContactPageClient() {
       <Navbar />
       <main>
         {/* Intro & Action Options */}
-        <section id="contact-options" className={styles.intro}>
+        <section className={styles.intro}>
           <div className={styles.introCopy}>
             <p className={styles.eyebrow}>ਸੰਪਰਕ ਕਰੋ · Contact Us</p>
             <h1>Helping You Grow Better</h1>
@@ -84,7 +84,7 @@ export default function ContactPageClient() {
             </div>
           </div>
 
-          <div className={styles.actions} aria-label="Contact options">
+          <div id="contact-options" className={styles.actions} aria-label="Contact options">
             <a className={styles.action} href="tel:+919815265705">
               <Phone aria-hidden="true" />
               <span>
@@ -99,20 +99,20 @@ export default function ContactPageClient() {
                 <small>+91 97802 40800</small>
               </span>
             </a>
-            <div className={styles.action}>
+            <a className={styles.action} href="mailto:support@babadeepsinghkhadstore.in">
               <Mail aria-hidden="true" />
               <span>
                 <strong>Technical Support / ਤਕਨੀਕੀ ਸਹਾਇਤਾ</strong>
                 <small>support@babadeepsinghkhadstore.in</small>
               </span>
-            </div>
-            <div className={styles.action}>
+            </a>
+            <a className={styles.action} href="mailto:babadeepsinghkhadstore@gmail.com">
               <Mail aria-hidden="true" />
               <span>
                 <strong>Store Email / ਈਮੇਲ ਸੰਪਰਕ</strong>
                 <small>babadeepsinghkhadstore@gmail.com</small>
               </span>
-            </div>
+            </a>
             <div className={styles.action}>
               <MapPin aria-hidden="true" />
               <span>
