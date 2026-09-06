@@ -23,7 +23,6 @@ export const metadata: Metadata = {
     title: "Agricultural Products & Farm Rentals | Baba Deep Singh Khad Store",
     description:
       "PAU certified farm inputs, bio-fertilizers, crop disease medicines, and rented equipment available at Gumtala, Amritsar.",
-    images: ["/images/products/organic_fertilizer_pack.webp"],
   },
 };
 

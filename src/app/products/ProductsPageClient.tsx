@@ -54,7 +54,7 @@ export default function ProductsPageClient() {
 
     autoPlayTimerRef.current = setInterval(() => {
       setCurrentSlideIndex((prev) => (prev + 1) % PRODUCT_CATEGORIES.length);
-    }, 4500);
+    }, 3000);
 
     return () => {
       if (autoPlayTimerRef.current) clearInterval(autoPlayTimerRef.current);
@@ -147,10 +147,10 @@ export default function ProductsPageClient() {
               <AnimatePresence mode="wait">
                 <motion.div
                   key={activeCategoryData.id}
-                  initial={{ opacity: 0, y: 8 }}
+                  initial={{ opacity: 0, y: 6 }}
                   animate={{ opacity: 1, y: 0 }}
-                  exit={{ opacity: 0, y: -8 }}
-                  transition={{ duration: 0.28 }}
+                  exit={{ opacity: 0, y: -6 }}
+                  transition={{ duration: 0.3, ease: "easeInOut" }}
                   className={styles.slideContent}
                 >
                   {/* Category Visual */}

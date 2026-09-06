@@ -7,7 +7,7 @@ import { motion, AnimatePresence, useScroll, useSpring } from "framer-motion";
 import {
   Menu,
   X,
-  Phone,
+  Mail,
   Home,
   Info,
   Images,
@@ -98,7 +98,6 @@ export default function Navbar({ activeSection, onNavClick }: NavbarProps) {
       punjabi: "ਸਾਡੇ ਉਤਪਾਦ",
       href: "/products",
       icon: PackageCheck,
-      badge: "19+ Items",
     },
     { id: "about", label: "About Us", punjabi: "ਸਾਡੇ ਬਾਰੇ", href: "/about", icon: Info },
     { id: "gallery", label: "Gallery", punjabi: "ਗੈਲਰੀ", href: "/gallery", icon: Images },
@@ -168,21 +167,21 @@ export default function Navbar({ activeSection, onNavClick }: NavbarProps) {
         {/* Desktop CTA / Mobile Quick App Action Cluster */}
         <div className={styles.navActions}>
           <a
-            href="tel:+919815265705"
+            href="mailto:support@babadeepsinghkhadstore.in"
             className={styles.ctaButton}
-            aria-label="Quick Call Store: +91 98152 65705"
+            aria-label="Tech Support: support@babadeepsinghkhadstore.in"
           >
-            <Phone size={13} className={styles.ctaIcon} />
-            <span>Quick Call</span>
+            <Mail size={13} className={styles.ctaIcon} />
+            <span>Tech Support</span>
           </a>
 
-          {/* Quick Mobile Direct Call Button */}
+          {/* Quick Mobile Direct Email Button */}
           <a
-            href="tel:+919815265705"
+            href="mailto:support@babadeepsinghkhadstore.in"
             className={styles.mobileActionBtnCall}
-            aria-label="Call Store Directly"
+            aria-label="Email Technical Support"
           >
-            <Phone size={17} />
+            <Mail size={17} />
           </a>
 
           {/* Mobile Hamburger Button */}
@@ -283,12 +282,7 @@ export default function Navbar({ activeSection, onNavClick }: NavbarProps) {
                             <IconComponent size={18} />
                           </div>
                           <div>
-                            <div className={styles.drawerNavLabelRow}>
-                              <span className={styles.drawerNavLabel}>{item.label}</span>
-                              {item.badge && (
-                                <span className={styles.drawerNavBadge}>{item.badge}</span>
-                              )}
-                            </div>
+                            <span className={styles.drawerNavLabel}>{item.label}</span>
                             <span className={styles.drawerNavPunjabi}>{item.punjabi}</span>
                           </div>
                         </div>

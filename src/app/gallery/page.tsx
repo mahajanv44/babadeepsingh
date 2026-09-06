@@ -8,7 +8,6 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Gallery - Baba Deep Singh Khad Store",
     description: "Visual journey of Punjab agriculture, crops, store, and farming community in Amritsar.",
-    images: ["/images/gallery/mustard_field.webp"],
   },
 };
 
