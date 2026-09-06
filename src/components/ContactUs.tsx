@@ -138,10 +138,16 @@ export default function ContactUs({ onClose }: ContactUsProps) {
               <div className={styles.infoItem}>
                 <h4>Email</h4>
                 <p>
+                  <a href="mailto:support@babadeepsinghkhadstore.in">
+                    support@babadeepsinghkhadstore.in
+                  </a>
+                </p>
+                <p>
                   <a href="mailto:babadeepsinghkhadstore@gmail.com">
                     babadeepsinghkhadstore@gmail.com
                   </a>
                 </p>
+
               </div>
 
             </motion.div>
