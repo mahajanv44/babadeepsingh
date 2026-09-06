@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { Cinzel, Outfit } from "next/font/google";
 import "./globals.css";
-import Head from 'next/head';
 const cinzel = Cinzel({
   variable: "--font-title",
   subsets: ["latin"],
@@ -24,6 +23,7 @@ export const metadata: Metadata = {
   robots: {
     index: true,
     follow: true,
+    'max-image-preview': 'none',
   },
   verification: {
     google: "JpnhcCO5wR1AjqSZ3MjZUNtgmGbvmk6t5hL1iEfXB4c",
