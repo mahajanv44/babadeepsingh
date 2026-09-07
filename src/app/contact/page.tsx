@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import ContactPageClient from "./ContactPageClient";
 
 export const metadata: Metadata = {
-  title: "Contact Us | Baba Deep Singh Khad Store",
+  title: "Contact Us | Baba Deep Singh Khad Store ",
   description:
-    "Contact Baba Deep Singh Khad Store in Gumtala, Amritsar for fertilizers, seeds, pesticides, and agricultural guidance.",
+    "Get in touch with Baba Deep Singh Khad Store. Call +91 98152 65705 for genuine fertilizers, seeds & farm machinery rentals.",
   alternates: {
     canonical: "https://babadeepsinghkhadstore.in/contact",
   },

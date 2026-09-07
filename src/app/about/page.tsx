@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import AboutPageClient from "./AboutPageClient";
 
 export const metadata: Metadata = {
-  title: "About Us | Baba Deep Singh Khad Store",
+  title: "About Us | Baba Deep Singh Khad Store ",
   description:
-    "Learn how Baba Deep Singh Khad Store grew from a village business into a trusted agricultural partner across Amritsar.",
+    "Learn about Baba Deep Singh Khad Store in Gumtala, Amritsar. Trusted partner for certified fertilizers, seeds & farm inputs since day one.",
   alternates: {
     canonical: "https://babadeepsinghkhadstore.in/about",
   },

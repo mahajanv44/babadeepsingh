@@ -19,10 +19,7 @@ export default function AboutPageClient() {
             </div>
             <h1>The Story Behind Baba Deep Singh Khad Store.</h1>
             <p className={styles.heroText}>
-              Baba Deep Singh Khad Store began with a simple purpose: help farmers
-              access dependable agricultural products and practical support close to
-              home. Today, that purpose reaches farmers across the wider Amritsar
-              region with certified hybrid seeds, bio-fertilizers, and trusted agronomic advisory.
+              Baba Deep Singh Khad Store was founded with a clear mission: to bring dependable, university-certified farm inputs directly to our local farming community. Based in Gumtala, we proudly serve farmers across surrounding villages with PAU Ludhiana-approved hybrid seeds, bio-fertilizers, affordable equipment rentals, and free crop guidance—ensuring reliable support right next door.
             </p>
             <div className={styles.heroFeatures}>
               <div className={styles.featurePill}>
