@@ -66,8 +66,8 @@ export default function Navbar({ activeSection, onNavClick }: NavbarProps) {
     } else if (day === 6) {
       setStoreStatus({
         isOpen: true,
-        text: "Store Open Today · 9:00 AM – 6:30 PM",
-        punjabi: "ਸ਼ਨੀਵਾਰ: ਸਵੇਰੇ 9:00 ਵਜੇ ਤੋਂ ਸ਼ਾਮ 6:30 ਵਜੇ ਤੱਕ",
+        text: "Store Open Today · 9:00 AM – 7:00 PM",
+        punjabi: "ਸ਼ਨੀਵਾਰ: ਸਵੇਰੇ 9:00 ਵਜੇ ਤੋਂ ਸ਼ਾਮ 7:00 ਵਜੇ ਤੱਕ",
       });
     } else {
       setStoreStatus({
@@ -244,9 +244,8 @@ export default function Navbar({ activeSection, onNavClick }: NavbarProps) {
 
               {/* Status Badge */}
               <div
-                className={`${styles.drawerStatusRow} ${
-                  !storeStatus.isOpen ? styles.drawerStatusRowClosed : ""
-                }`}
+                className={`${styles.drawerStatusRow} ${!storeStatus.isOpen ? styles.drawerStatusRowClosed : ""
+                  }`}
               >
                 <span
                   className={
@@ -272,9 +271,8 @@ export default function Navbar({ activeSection, onNavClick }: NavbarProps) {
                       <Link
                         key={item.id}
                         href={item.href}
-                        className={`${styles.drawerNavLink} ${
-                          active ? styles.drawerNavLinkActive : ""
-                        }`}
+                        className={`${styles.drawerNavLink} ${active ? styles.drawerNavLinkActive : ""
+                          }`}
                         onClick={() => handleLinkClick(item.href)}
                       >
                         <div className={styles.drawerNavLeft}>

@@ -199,13 +199,13 @@ export default function ContactPageClient() {
               <h3>Store Operating Schedule</h3>
               <div className={styles.hoursSchedule}>
                 <div className={styles.scheduleRow}>
-                  <span>ਸੋਮਵਾਰ – ਸ਼ੁੱਕਰਵਾਰ (Mon – Fri)</span>
+                  <span>ਸੋਮਵਾਰ – ਸ਼ਨੀਵਾਰ (Mon – Sat)</span>
                   <strong>9:00 AM – 7:00 PM</strong>
                 </div>
-                <div className={styles.scheduleRow}>
+                {/* <div className={styles.scheduleRow}>
                   <span>ਸ਼ਨੀਵਾਰ (Saturday)</span>
                   <strong>9:00 AM – 6:30 PM</strong>
-                </div>
+                </div> */}
                 <div className={styles.scheduleRow}>
                   <span>ਐਤਵਾਰ (Sunday)</span>
                   <strong className={styles.closedText}>ਬੰਦ · Closed</strong>

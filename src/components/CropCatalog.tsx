@@ -37,7 +37,7 @@ export default function CropCatalog() {
         >
           <h2 className={styles.title}>Agricultural Crop Treasury</h2>
           <p className={styles.tagline}>
-ਭਾਰਤ ਦੀਆਂ ਮੁੱਖ ਫਸਲਾਂ ਦੇ ਵਰਗੀਕਰਨ ਸੰਬੰਧੀ ਵੇਰਵਿਆਂ, ਇਤਿਹਾਸਕ ਕਾਸ਼ਤ ਲੋੜਾਂ, ਖੇਤਰੀ ਸਰੋਤਾਂ ਅਤੇ ਪੌਸ਼ਟਿਕ ਮਾਪਦੰਡਾਂ ਬਾਰੇ ਜਾਣਕਾਰੀ ਪ੍ਰਾਪਤ ਕਰੋ।
+            ਭਾਰਤ ਦੀਆਂ ਮੁੱਖ ਫਸਲਾਂ ਦੇ ਵਰਗੀਕਰਨ ਸੰਬੰਧੀ ਵੇਰਵਿਆਂ, ਇਤਿਹਾਸਕ ਕਾਸ਼ਤ ਲੋੜਾਂ, ਖੇਤਰੀ ਸਰੋਤਾਂ ਅਤੇ ਪੌਸ਼ਟਿਕ ਮਾਪਦੰਡਾਂ ਬਾਰੇ ਜਾਣਕਾਰੀ ਪ੍ਰਾਪਤ ਕਰੋ।
           </p>
         </motion.div>
 
@@ -60,9 +60,8 @@ export default function CropCatalog() {
             {categories.map((category) => (
               <button
                 key={category}
-                className={`${styles.filterBtn} ${
-                  filter === category ? styles.filterBtnActive : ""
-                }`}
+                className={`${styles.filterBtn} ${filter === category ? styles.filterBtnActive : ""
+                  }`}
                 onClick={() => setFilter(category)}
               >
                 {category}
@@ -98,9 +97,9 @@ export default function CropCatalog() {
 
                 <div className={styles.cardContent}>
                   <h3 className={styles.cardTitle}>{crop.name}</h3>
-                  <p className={styles.scientific}>{crop.scientificName}</p>
+                  {/* <p className={styles.scientific}>{crop.scientificName}</p> */}
                   <p style={{ color: "var(--accent-gold)", fontSize: "13px", fontWeight: 500 }}>
-                  {crop.punjabiName} - {crop.hindiName}
+                    {crop.punjabiName} - {crop.hindiName}
                   </p>
 
                   <div className={styles.metaGrid}>

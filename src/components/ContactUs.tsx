@@ -115,8 +115,8 @@ export default function ContactUs({ onClose }: ContactUsProps) {
               <div className={styles.infoItem}>
                 <h4>Business Hours</h4>
                 <p>
-                  Monday - Friday: 9:00 AM - 7:00 PM<br />
-                  Saturday: 9:00 AM - 6:30 PM<br />
+                  Monday - Saturday: 9:00 AM - 7:00 PM<br />
+                  {/* Saturday: 9:00 AM - 6:30 PM<br /> */}
                   Sunday: Closed
                 </p>
               </div>
