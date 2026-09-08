@@ -66,14 +66,16 @@ export default function Navbar({ activeSection, onNavClick }: NavbarProps) {
     } else if (day === 6) {
       setStoreStatus({
         isOpen: true,
+        // text: "Store Open Today · 9:00 AM – 7:00 PM",
+        // punjabi: "ਸ਼ਨੀਵਾਰ: ਸਵੇਰੇ 9:00 ਵਜੇ ਤੋਂ ਸ਼ਾਮ 7:00 ਵਜੇ ਤੱਕ",
         text: "Store Open Today · 9:00 AM – 7:00 PM",
-        punjabi: "ਸ਼ਨੀਵਾਰ: ਸਵੇਰੇ 9:00 ਵਜੇ ਤੋਂ ਸ਼ਾਮ 7:00 ਵਜੇ ਤੱਕ",
+        punjabi: "ਸੋਮਵਾਰ - ਸ਼ਨੀਵਾਰ: ਸਵੇਰੇ 9:00 ਵਜੇ ਤੋਂ ਸ਼ਾਮ 7:00 ਵਜੇ ਤੱਕ",
       });
     } else {
       setStoreStatus({
         isOpen: true,
         text: "Store Open Today · 9:00 AM – 7:00 PM",
-        punjabi: "ਸੋਮਵਾਰ - ਸ਼ੁੱਕਰਵਾਰ: ਸਵੇਰੇ 9:00 ਵਜੇ ਤੋਂ ਸ਼ਾਮ 7:00 ਵਜੇ ਤੱਕ",
+        punjabi: "ਸੋਮਵਾਰ - ਸ਼ਨੀਵਾਰ: ਸਵੇਰੇ 9:00 ਵਜੇ ਤੋਂ ਸ਼ਾਮ 7:00 ਵਜੇ ਤੱਕ",
       });
     }
   }, []);
